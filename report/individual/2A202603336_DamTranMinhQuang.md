@@ -32,18 +32,18 @@ Số keyframe lấy từ kết quả `src/check_submission.py`.
 
 | Mã | Số keyframe | Keyframe ở frame | Số frame có mặt | Keyframe / 100 frame | Thời gian (phút) | Chỗ khó |
 |---|---|---|---|---|---|---|
-| P1 | | | | | | |
-| P2 | | | | | | |
-| P3 | | | | | | |
-| P4 | | | | | | |
-| P5 | | | | | | |
-| **Tổng** | | | | | | |
+| P1 | 25 | [0, 10, 20, 29, 30, 46, 50, 52, 53, 60, 61, 62, 63, 73, 83, 86, 87, 88, 93, 103, 113, 123, 133, 143, 149] | 143 | 17.5 | 20 | không |
+| P2 | 12 | [61, 64, 67, 70, 80, 90, 100, 110, 120, 130, 140, 149] | 89 | 13.5 | 20 | Không |
+| P3 | 18 | [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 122, 124, 130, 140, 149] | 150 | 12.0 | 20 | Không |
+| P4 | 16 | [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 149] | 150 | 10.7 | 20 | Không |
+| P5 | 14 | [0, 10, 20, 30, 40, 50, 60, 62, 70, 80, 100, 136, 140, 142] | 121 | 11.6 | 20 | Không |
+| **Tổng** | 85 |  | 653 | 13.0 | 1h | |
 
-Keyframe / 100 frame của cả bài = tổng keyframe ÷ tổng số frame có mặt × 100 = ...
+Keyframe / 100 frame của cả bài = tổng keyframe ÷ tổng số frame có mặt × 100 = 85 keyframe / 653 frame có mặt x 100 = 13
 
 Bạn đặt keyframe nhiều nhất ở người nào? Vì sao (người đó rẽ, dừng, lại gần camera hay bị che)?
 
-...
+Em đặt ở P1 vì người đó xoay người nhiều nhất
 
 ## 3. Đoạn bị che (CP2)
 
