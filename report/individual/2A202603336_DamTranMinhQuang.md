@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — HoVaTen-MSSV
+# Báo cáo cá nhân — DamTranMinhQuang-2A202603336
 
 Đổi tên file theo quy tắc `MSSV_HoTen.md`. Ví dụ: `20241234_NguyenVanAn.md`.
 
@@ -6,13 +6,13 @@
 
 ## 0. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Mã đề (A/B/C):
-- Email:
-- Link repository:
-- Giờ bắt đầu:
-- Giờ kết thúc:
+- Họ tên: Đàm Trần Minh Quang
+- MSSV: 2A202603336
+- Mã đề (A/B/C): A
+- Email: 26ai.quangdtm@vinuni.edu.vn
+- Link repository: https://github.com/damtranminhquang125-oss/K5-L2B-Day05-DamTranMinhQuang-2A202603336-MOTTracking
+- Giờ bắt đầu: 16h
+- Giờ kết thúc: 19h30
 
 ## 1. Xem trước đoạn video (CP0)
 
@@ -20,11 +20,11 @@ Ghi **trước khi vẽ**, mỗi người một dòng.
 
 | Mã | Frame xuất hiện | Frame cuối thấy được | Rẽ / dừng / đổi tốc độ ở frame | Bị che ở frame | Ghi chú |
 |---|---|---|---|---|---|
-| P1 | | | | | |
-| P2 | | | | | |
-| P3 | | | | | |
-| P4 | | | | | |
-| P5 | | | | | |
+| P1 | 0 | 149 | 18 | 39 | |
+| P2 | 61 | 149 | 78 | Không | |
+| P3 | 0 | 149 | Giữ nguyên tốc độ không rẽ không dừng | Không | |
+| P4 | 40 | 149 | Giữ nguyên tốc độ không rẽ không dừng | Không | |
+| P5 | 0 | 147 | 30 | 110 | |
 
 ## 2. Keyframe và thời gian (CP1, CP4)
 
