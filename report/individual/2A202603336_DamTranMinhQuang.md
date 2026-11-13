@@ -74,9 +74,7 @@ Loại lỗi dùng đúng một trong 7 mã: `id_switch`, `fragmentation`, `lost
 
 | Frame | Mã người | Loại lỗi | Mô tả một câu | Phát hiện ở lượt | Đã sửa? |
 |---:|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| | | | | | Đã kiểm hai lượt, không lỗi |
 
 Tổng hợp số lỗi theo loại:
 
@@ -86,37 +84,70 @@ Tổng hợp số lỗi theo loại:
 
 Lỗi nào chỉ lượt 2 (theo cảnh) mới thấy, lượt 1 (theo người) không thấy? Vì sao?
 
-...
+Có vài frame bị gán nhầm occluded với outside
 
 ## 5. File xuất và kết quả tự kiểm (CP4)
 
 | Kiểm tra | Kết quả |
 |---|---|
-| Tên file MOT 1.1 | |
-| Tên file CVAT for video 1.1 | |
-| Số track ID khác nhau trong `gt/gt.txt` (phải là 5) | |
-| Frame `outside` không có dòng trong `gt.txt` (đúng / sai) | |
-| Job đã completed trên CVAT máy cá nhân | |
+| Tên file MOT 1.1 | Có |
+| Tên file CVAT for video 1.1 | Có |
+| Số track ID khác nhau trong `gt/gt.txt` (phải là 5) | Có |
+| Frame `outside` không có dòng trong `gt.txt` (đúng / sai) | Sai |
+| Job đã completed trên CVAT máy cá nhân | Có |
 
 Dán phần tóm tắt in ra từ `src/check_submission.py`:
 
 ```text
-...
+Số frame in theo CVAT (bắt đầu từ 0). Trong gt.txt, frame_id = frame CVAT + 1.
+
+=== File MOT 1.1: DamTranMinhQuang_mot.zip ===
+  Số track ID: 5   |   Tổng số box: 653
+  [OK]        Đúng 5 track ID.
+
+  Track | Frame có mặt | Số frame | Đoạn vắng (outside)
+      1 |   0–149      |      150 | -
+      2 |   0–149      |      150 | -
+      3 |   0–149      |      143 | 39–45
+      4 |   0–146      |      121 | 110–135
+      5 |  61–149      |       89 | -
+
+
+=== File CVAT for video 1.1: DamTranMinhQuang_cvat_video.zip ===
+
+  Track | Nhãn   | Frame thấy | Keyframe | KF/100 frame | Frame occluded | Lần bật outside
+      0 | person |        150 |       18 |         12.0 |              0 |               0
+              Track 0: keyframe ở frame [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 122, 124, 130, 140,149]
+      1 | person |        150 |       16 |         10.7 |             30 |               0
+              Track 1: keyframe ở frame [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 149]
+      2 | person |        143 |       25 |         17.5 |             24 |               1
+              Track 2: keyframe ở frame [0, 10, 20, 29, 30, 46, 50, 52, 53, 60, 61, 62, 63, 73, 83, 86, 87, 88, 93, 103, 113, 123, 133, 143, 149]
+      3 | person |         89 |       12 |         13.5 |              0 |               0
+              Track 3: keyframe ở frame [61, 64, 67, 70, 80, 90, 100, 110, 120, 130, 140, 149]
+      4 | person |        121 |       14 |         11.6 |              9 |               2
+              Track 4: keyframe ở frame [0, 10, 20, 30, 40, 50, 60, 62, 70, 80, 100, 136, 140, 142]
+
+  Tổng: 85 keyframe / 653 frame có mặt = 13.0 keyframe / 100 frame
+  [OK]        Đọc được 5 track từ annotations.xml.
+
+=== Tóm tắt ===
+  Lỗi: 0   |   Cảnh báo: 0
+  Đạt. Dán phần tóm tắt này vào báo cáo mục 5.
 ```
 
 ## 6. Ba câu kết
 
 1. Nếu được gán lại, bạn sẽ đặt keyframe khác ở đâu? Vì sao?
 
-   ...
+   Em sẽ đặt lúc person xoay người vì lúc đó keyframe sẽ rộng hơn bình thường
 
 2. Có chỗ nào bạn không chắc "cùng ID hay ID mới"? Bạn đã quyết định và ghi chú thế nào?
 
-   ...
+   Không
 
 3. Một lỗi ID trong job của bạn (nếu không còn sót, chọn lỗi đã sửa) có thể làm xe tự lái dự đoán sai chuyển động của người đó như thế nào? Lỗi đó ảnh hưởng MOTA hay IDF1 nhiều hơn?
 
-   ...
+   Không
 
 ## Bonus (nếu làm)
 
