@@ -58,9 +58,7 @@ Người bị che: `P1`
 
 - Thời gian khuất hẳn: 7 frame = 0.23 giây.
 - Quyết định: giữ cùng ID.
-- Lý do (trả lời 3 câu: khuất bao lâu so với 60 frame, ngoại hình có khớp, chỗ hiện lại có đúng hướng và tốc độ):
-
-Khuất hẳn 7 frame, ngoại hình vẫn khớp, chỗ hiện lại có đúng hướng và tốc độ
+- Lý do (trả lời 3 câu: khuất bao lâu so với 60 frame, ngoại hình có khớp, chỗ hiện lại có đúng hướng và tốc độ): Khuất hẳn 7 frame, ngoại hình vẫn khớp, chỗ hiện lại có đúng hướng và tốc độ
 
 Ảnh chụp màn hình:
 
