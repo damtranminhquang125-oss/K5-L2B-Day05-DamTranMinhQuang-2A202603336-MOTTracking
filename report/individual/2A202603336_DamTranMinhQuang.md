@@ -47,20 +47,20 @@ Em đặt ở P1 vì người đó xoay người nhiều nhất
 
 ## 3. Đoạn bị che (CP2)
 
-Người bị che: `P_`
+Người bị che: `P1`
 
 | Mốc | Frame |
 |---|---:|
-| Bắt đầu bị che một phần (bật `occluded`) | |
-| Mất hẳn (bật `outside`) | |
-| Hiện lại (tắt `outside`) | |
-| Thấy rõ trở lại (tắt `occluded`) | |
+| Bắt đầu bị che một phần (bật `occluded`) | 29 |
+| Mất hẳn (bật `outside`) | 39 |
+| Hiện lại (tắt `outside`) | 46 |
+| Thấy rõ trở lại (tắt `occluded`) | 60 |
 
-- Thời gian khuất hẳn: ___ frame = ___ giây.
-- Quyết định: giữ cùng ID / tạo track mới.
+- Thời gian khuất hẳn: 7 frame = 0.23 giây.
+- Quyết định: giữ cùng ID.
 - Lý do (trả lời 3 câu: khuất bao lâu so với 60 frame, ngoại hình có khớp, chỗ hiện lại có đúng hướng và tốc độ):
 
-...
+Khuất hẳn 7 frame, ngoại hình vẫn khớp, chỗ hiện lại có đúng hướng và tốc độ
 
 Ảnh chụp màn hình:
 
